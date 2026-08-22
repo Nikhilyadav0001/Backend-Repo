@@ -39,6 +39,8 @@ public class TransactionApp {
 						break;
 					}
 				}
+				
+				
 				int[] count = st.executeBatch();
 				int updateCount = 0;
 				for (int result : count) {

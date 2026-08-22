@@ -25,6 +25,8 @@ public class SQLInjectionUsingStatement {
 				String password = scanner.next();
 				//password = "'" + password + "'";
 				String sqlSelectQuery = "select count(*) from user where name=" + name + " and password="+ password + " ";
+				
+				//SELECT count(*) FROM user WHERE name='abc' AND password='' OR '1'='1'
 				System.out.println(sqlSelectQuery);
 				try(ResultSet rs = statement.executeQuery(sqlSelectQuery)){
 					 
@@ -50,3 +52,8 @@ public class SQLInjectionUsingStatement {
 	}
 
 }
+
+
+
+
+

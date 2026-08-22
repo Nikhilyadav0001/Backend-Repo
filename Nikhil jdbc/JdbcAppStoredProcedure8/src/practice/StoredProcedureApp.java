@@ -21,8 +21,11 @@ public class StoredProcedureApp {
 		}
 		try (Connection cn= DbUtil.getMySQLConnection();){
 			try(CallableStatement cst = cn.prepareCall(CALL_PROCEDURE_QUERY) ){
+				
+				//input for procedure
 				cst.setInt(1, id);
 				
+				//output from procedure
 				cst.registerOutParameter(2,Types.VARCHAR);
 				cst.registerOutParameter(3,Types.FLOAT);
 				cst.registerOutParameter(4,Types.INTEGER);

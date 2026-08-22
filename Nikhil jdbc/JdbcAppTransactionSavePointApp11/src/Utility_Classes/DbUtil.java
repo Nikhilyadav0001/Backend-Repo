@@ -17,7 +17,7 @@ public class DbUtil {
     static {
         FileInputStream fs = null;
         try {
-            fs = new FileInputStream("D:\\java files\\JdbcAppBatchupdates9\\src\\Properties_Files\\database.properties");
+            fs = new FileInputStream("D:\\java files\\Nikhil jdbc\\JdbcAppTransactionSavePointApp11\\src\\Properties_Files\\database.properties");
             p = new Properties(); // ✅ assign to class-level variable
             p.load(fs);
         } catch (FileNotFoundException e) {

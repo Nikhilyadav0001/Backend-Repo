@@ -1,0 +1,25 @@
+<ehcache>
+    <!-- 
+    diskStore → Sets folder where cache data spills when memory limit reached
+    
+    defaultCache → Applies these settings to caches created programmatically through CacheManager
+    
+    maxEntriesLocalHeap → Sets maximum number of objects. If exceeded, oldest objects removed
+    
+    eternal → Sets whether elements live forever. If false, timeouts used
+    
+    timeToIdleSeconds → Sets time idle for element (not accessed since last) before expiry
+    
+    timeToLiveSeconds → Sets total time element lives since creation before expiry
+    
+    overflowToDisk → Sets whether elements overflow to disk when memory cache reached maxInMemory limit
+    -->
+    <diskStore path="java.io.tmpdir"/>
+
+    <defaultCache
+            maxEntriesLocalHeap="100"
+            eternal="false"
+            timeToIdleSeconds="10"
+            timeToLiveSeconds="30"
+            overflowToDisk="true"/>
+</ehcache>

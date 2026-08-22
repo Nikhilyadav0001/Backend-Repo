@@ -1,0 +1,12 @@
+emp:
+  info:
+    eid: 10
+    ename: nikhil
+    eaddress: gurugram
+    
+std:
+  info:
+    sid: 55456
+    sname: Sher
+    saddress: shergarh
+    

@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>in.nikhil</groupId>
+  <artifactId>03-JDBC-Maven-App</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  <name>03-JDBC-Maven-App</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <!-- Dependency for JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Dependency for MySQL JDBC driver -->
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+
+    <!-- Dependency from another project -->
+    <dependency>
+      <groupId>in.nikhil</groupId>
+      <artifactId>02-Maven-App</artifactId>
+      <version>1.4</version>
+    </dependency>
+  </dependencies>
+
+  <!-- Adding plugin (extra software needed by Maven to run) -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <id>jdbcapp</id>
+            <phase>package</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>nikhil.main.MainApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

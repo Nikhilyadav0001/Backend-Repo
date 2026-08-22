@@ -1,0 +1,47 @@
+package nikhil.bean;
+
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//UserDefined type
+@Component(value = "wmg")
+public class WishMassageGenerator {
+
+	static {
+		System.out.println("\n\nWishMessageGenerator.class file is loading...");
+	}
+
+	public WishMassageGenerator() {
+		System.out.println("WishMessageGenerator Object created using Zero param...");
+	}
+
+	// HAS-A[Inbuilt type]
+	@Autowired(required = false)
+	private LocalDateTime date;
+
+	// Business logic
+	public String wishMessage(String user) {
+		System.out.println("WishMessageGenerator.wishMessage()");
+		int hour = date.getHour();
+		String msg = "";
+
+		if (hour < 12) {
+			msg += "Good Morning ::" + user;
+		} else if (hour < 16) {
+			msg += "Good Afternoon :: " + user;
+		} else if (hour < 20) {
+			msg += "Good Evening :: " + user;
+		} else {
+			msg += "Good Night :: " + user;
+		}
+		return msg;
+	}
+
+	@Override
+	public String toString() {
+		return "WishMessageGenerator [date=" + date + "]";
+	}
+
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- jdbc related configuration -->
+        <property name="hibernate.connection.driver.class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql:///learn</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">nikhilhayatpur@123</property>
+       
+        <!-- hibernate related configuration -->
+        <!-- Creating a table (if table found drop and create a new one)
+        now updating-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- Infroming orm to genrate the query as per the DBE -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        
+        <!-- to diaplay the querry genrated by the orm in proper format -->
+        <property name="hibernate.show_sql">true</property>
+        
+        <!-- to diaplay the querry genrated by the orm  -->
+        <property name="hibernate.format_sql">true</property>
+       
+        <mapping resource="customer.hbm.xml"/>
+    </session-factory>
+
+</hibernate-configuration>

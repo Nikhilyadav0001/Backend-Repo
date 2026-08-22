@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ThymeLeaf output</title>
+	<link rel="stylesheet" th:href=@{/css/employee.css}>
+</head>
+<body>
+	<h1>THYMELEAF OUTPUT WITH SPRINGBOOT</h1>
+	<marquee>
+		<p>the username is ::<span th:text=${user}></span></p>
+		<p>the Address  is ::<span th:text=${addr}></span></p>
+	</marquee>
+</body>
+</html>

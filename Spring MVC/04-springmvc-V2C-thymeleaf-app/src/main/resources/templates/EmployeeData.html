@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Employee Objectis ::[[${employee}]]</h1>
+	<table border="1">
+		<tr>
+			<th>EMPID</th>
+			<th>EMPNAME</th>
+			<th>EMPSAL</th>
+		</tr>
+		<tr th:each = "emp :${list}">
+			<td th:text="${emp.empId}"></td>
+			<td>[[${emp.empName}]]</td>
+			<td th:text="${emp.empSal}"></td>
+		</tr>
+	</table>
+</body>
+</html>

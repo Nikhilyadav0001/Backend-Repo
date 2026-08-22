@@ -23,7 +23,7 @@ public final class MainApp {
             st = connection.createStatement();
             System.out.println("Statement class: " + st.getClass().getName());
 
-            // Execute query
+            // Execute the query
             String sqlQuery = "SELECT sid, sname, saddress FROM student";
             rs = st.executeQuery(sqlQuery);
 

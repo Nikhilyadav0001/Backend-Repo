@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import Utility_Classes.DbUtil;
 
-public class BatchSUpdateUsingPreparedStatementApp2 {
+public class BatchSUpdateUsingPreparedStatementApp {
 
 	public static void main(String[] args) {
 		try (Connection cn =DbUtil.getMySQLConnection()){

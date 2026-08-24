@@ -24,7 +24,7 @@ public class ReportGenrationServlet extends HttpServlet {
 	@Resource(name="JNDI")
 	private DataSource ds;
 	
-	
+	//using File dowloading servlet
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("ReportGenrationServlet.doGet()");

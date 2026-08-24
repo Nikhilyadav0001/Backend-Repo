@@ -27,7 +27,8 @@ public class FileDownloading extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Resource(name="JNDI")
 	private DataSource ds;
-	
+	// must use
+	//http://localhost:9999/FileDownloading/downloadurl?id=1&type=resume
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("FileDownloading.doGet()");

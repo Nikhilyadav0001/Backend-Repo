@@ -19,6 +19,8 @@ public class SUNMSServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ServletContext context = getServletContext();
+		
+		//for forign request dispacher we need forign req dispacher context
 		ServletContext fc = context.getContext("/FoirgnRequestDispacherOracle9");
 		System.out.println(fc.getClass().getName());
 		RequestDispatcher rd = fc.getRequestDispatcher("/oracle");

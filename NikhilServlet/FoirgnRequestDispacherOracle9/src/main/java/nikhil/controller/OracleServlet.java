@@ -18,6 +18,7 @@ public class OracleServlet extends HttpServlet {
 	
 	@Override
 	public  void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//forign request dipacher
 		PrintWriter out = response.getWriter();
 		out.println("<h1 style ='color:red; text-align:center;'>RESPONCE FROM ORACLE</h1>");
 		

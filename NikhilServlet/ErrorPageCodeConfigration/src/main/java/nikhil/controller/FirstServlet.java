@@ -21,6 +21,7 @@ public class FirstServlet extends HttpServlet {
 		if (name.equalsIgnoreCase("nikhil")&& pwd.equalsIgnoreCase("nikhil@123")) {
 			out.println("<h1 style='color:green; text-align:center;'>AVAIL THE SERVICES OF NIKHILSKILLS....</h1>");
 		}else {
+			//calling error page
 			response.sendError(401);
 		}
 		

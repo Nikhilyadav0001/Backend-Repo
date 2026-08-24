@@ -12,7 +12,7 @@ public class CustomizedRequest extends HttpServletRequestWrapper {
 	@Override
 	public String getParameter(String name) {
 		String data = super.getParameter(name);
-		System.out.println("data enteresd by the user is "+ data);
+		System.out.println("data entered by the user is "+ data);
 		
 		if (data.equals("java") || data.equals("jee")) {
 			return "sleeping";

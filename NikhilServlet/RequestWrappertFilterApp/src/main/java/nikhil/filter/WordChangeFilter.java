@@ -21,6 +21,12 @@ import nikhil.customized.CustomizedRequest;
 					, urlPatterns = { "/test" })
 public class WordChangeFilter extends HttpFilter implements Filter {
  
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
 	static {
 		System.out.println("loading filter");
 	}

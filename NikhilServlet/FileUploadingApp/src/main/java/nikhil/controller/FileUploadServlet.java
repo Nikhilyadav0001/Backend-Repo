@@ -75,6 +75,7 @@ public class FileUploadServlet extends HttpServlet {
 			upb.store(nreq,"userphoto");//completes photo uploading
 			
 			//geting all the uploaded filenames
+			@SuppressWarnings("rawtypes")
 			Vector vector =upb.getHistory();
 			resumeFilePath = resumeLocation + ((UploadParameters) vector.get(0)).getFilename();
 			System.out.println(resumeFilePath);

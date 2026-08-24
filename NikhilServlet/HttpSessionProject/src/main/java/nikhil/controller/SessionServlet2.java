@@ -22,6 +22,7 @@ public class SessionServlet2 extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		
+		//return null if sessoin is not present
 		HttpSession session = request.getSession(false);
 		if (session == null) {
 			out.println("<h1 style='color:red; text-align:center'>NO SESSON INFO IS AVALABLE</h1>");

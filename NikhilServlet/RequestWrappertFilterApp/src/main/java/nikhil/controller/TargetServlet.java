@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TargetServlet
  */
+
+//http://localhost:9999/RequestWrappertFilterApp/test?name=jee
 @WebServlet("/test")
 public class TargetServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

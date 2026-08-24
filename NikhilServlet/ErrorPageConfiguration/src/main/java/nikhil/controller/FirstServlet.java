@@ -17,6 +17,8 @@ public class FirstServlet extends HttpServlet {
 		System.out.println("FirstServlet invoked");
 
 		PrintWriter out = response.getWriter();
+		//configured in web.xml
+		
 		out.println(10 / 0);//java.lang.ArithmetiException : /by zero
 		out.close();
 

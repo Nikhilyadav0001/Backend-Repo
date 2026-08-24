@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ShowBalanceServlet
+ * Servlet implementation class ShowBalanceServlet 
+ * see serverfile
  */
 @WebServlet("/showBalance")
 public class ShowBalanceServlet extends HttpServlet {

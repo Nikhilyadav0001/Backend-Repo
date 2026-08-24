@@ -33,7 +33,7 @@ public class DemoFilter extends HttpFilter implements Filter {
 		PrintWriter out = response.getWriter();
 		out.println("<h1 style='color:red; text-align:center'>ADDED BY FILTER BEFORE PROCESSING REQUEST...</h1>");
 		
-		// pass the request along the filter chain
+		// pass the request along the filter chain 
 		chain.doFilter(request, response);
 		
 		out.println("<h1 style='color:red; text-align:center'>ADDED BY FILTER AFTER PROCESSING REQUEST...</h1>");

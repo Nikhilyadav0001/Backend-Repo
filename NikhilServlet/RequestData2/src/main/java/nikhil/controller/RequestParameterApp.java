@@ -63,6 +63,7 @@ public class RequestParameterApp extends HttpServlet {
 		
 		
 	}
+	@SuppressWarnings("unused")
 	private void distroy() {
 		System.out.println("de instansation.........");
 

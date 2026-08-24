@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(
 		urlPatterns = { "/record" }, 
+		//init parameter are with regards to servlet
 		initParams = { 
 				@WebInitParam(name = "driverName", value = "com.mysql.cj.jdbc.Driver"), 
 				@WebInitParam(name = "url", value = "jdbc:mysql://localhost:3306/learn"), 

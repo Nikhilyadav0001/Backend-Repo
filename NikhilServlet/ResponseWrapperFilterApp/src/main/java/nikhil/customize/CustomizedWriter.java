@@ -1,13 +1,7 @@
 package nikhil.customize;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.nio.charset.Charset;
+
 
 public class CustomizedWriter extends PrintWriter {
 	

@@ -20,6 +20,7 @@ public class FirstServlet extends HttpServlet {
 		String uname =request.getParameter("name");
 		out.println("<h1 style='color:green; text-align:center'>welcome to  nikhil's</h1>");
 		
+		//url rewiting
 		String url ="./test2?name="+uname;
 		String encodeUrl=response.encodeURL(url);
 		response.sendRedirect(encodeUrl);

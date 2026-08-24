@@ -25,7 +25,7 @@ public class TargetServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("RequestProcessing :: TargetServlet.doGet()");
 		PrintWriter out = response.getWriter();
-		out.println("<h1 style='color:blue;text-align:center;'>No of users using the application :: "
+		out.println("<h1 style='color:blue;text-align:center;'>No of req on the application :: "
 				+ RequestDemoListener.count + "</h1>");
 		out.close();
 		}

@@ -16,6 +16,7 @@ public class ExceptionServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		PrintWriter out =response.getWriter();
+		//exception 
 		out.println(10/0);
 	}
 

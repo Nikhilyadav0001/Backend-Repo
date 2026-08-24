@@ -40,6 +40,7 @@ public class RequestHeaderApp extends HttpServlet {
 		System.out.println("RequestProcessing :: RequestHeaderApp.doGet()...");
 
 		PrintWriter out = response.getWriter();
+		//get headers
 		Enumeration<String> headerNames = request.getHeaderNames();
 		
 		out.println("<body align='center'>");

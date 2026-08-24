@@ -44,6 +44,7 @@ public class ImageFileResponce extends HttpServlet {
 				
 				//geting byte stream to sent thr responce
 				ServletOutputStream outputStream = response.getOutputStream();
+				
 				//reading the image through input stream
 				String location ="D:\\java files\\NikhilServlet\\ThirdServletApp\\src\\main\\webapp\\image.jpg";
 				String path =getServletContext().getRealPath("image.jpg");

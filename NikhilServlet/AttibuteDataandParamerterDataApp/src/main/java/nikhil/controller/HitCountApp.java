@@ -27,6 +27,7 @@ public class HitCountApp extends HttpServlet {
 		}else {
 			value++;
 		}
+		//hitcount
 		context.setAttribute("hitcount", value);
 		out.println("<h1>the no of hit request is::"+value+"</h1>");
 		out.println();

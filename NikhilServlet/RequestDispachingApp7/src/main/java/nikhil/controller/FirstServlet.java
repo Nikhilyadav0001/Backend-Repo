@@ -29,8 +29,9 @@ public class FirstServlet extends HttpServlet {
 		
 		request.setAttribute("name", "nikhil");
 		request.setAttribute("age", "17");
-		//frowording request using request dispacher
+		//forwording request using request dispacher 
 		RequestDispatcher rd = request.getRequestDispatcher("/second");
+		
 		rd.forward(request, response);
 		System.out.println("request comming back to "+getClass().getName());
 		out.close();

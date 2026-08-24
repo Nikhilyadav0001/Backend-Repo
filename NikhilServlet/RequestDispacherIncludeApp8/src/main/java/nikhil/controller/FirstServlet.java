@@ -30,7 +30,7 @@ public class FirstServlet extends HttpServlet {
 		
 		request.setAttribute("name", "nikhil");
 		request.setAttribute("age", "17");
-		//frowording request using request dispacher
+		//forwording request using request dispacher
 		RequestDispatcher rd = request.getRequestDispatcher("/second");
 		rd.include(request, response);
 		out.println("<h1 style ='color:red; text-align:center;'>AGAIN THE RESPONCE FROM FIRST SERVLET</h1>");

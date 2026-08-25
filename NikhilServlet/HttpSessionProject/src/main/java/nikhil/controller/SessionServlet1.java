@@ -35,8 +35,8 @@ public class SessionServlet1 extends HttpServlet {
 		
 		session.setAttribute(name, value);
 		
-		//15 sec later session will expire
-		session.setMaxInactiveInterval(15);
+		//150 sec later session will expire
+		session.setMaxInactiveInterval(150);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("index.html");
 		rd.forward(request, response);

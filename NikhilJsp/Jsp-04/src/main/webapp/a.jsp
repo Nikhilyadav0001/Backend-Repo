@@ -9,8 +9,7 @@
 <body>
 	<b>Start of A page</b>
 	<br>
-	<jsp:include page="b.jsp"/>
-	
+	<jsp:include page="b.jsp"/>	
 	<b>End of A  page</b>
 </body>
 </html>

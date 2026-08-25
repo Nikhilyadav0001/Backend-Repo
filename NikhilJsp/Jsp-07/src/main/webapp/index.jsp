@@ -12,6 +12,7 @@
 	String names[]={"nikhil","sachin","sheer","kunal"};
 	pageContext.setAttribute("name",names);//pagescope
 	%>
+	
 	<h1>
 	${name[0]}<br>
 	${name['1']}<br>
@@ -19,6 +20,7 @@
 	${name[5]}<br>
 	</h1>
 	<hr>
+	
 	<h1>Working with arrey list</h1>
 	<%
 		ArrayList<String> al= new ArrayList<>();

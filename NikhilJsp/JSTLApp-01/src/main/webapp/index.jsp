@@ -10,6 +10,11 @@
 <body>
 	<h1>WORKING WITH CORE TAGS</h1>
 	<%--print ot console  --%>
+	
+	
+	<%--must use tomcat 9 not 10 --%>
+	
+	
 	<c:out value="${param.user}"/>
 	<br>
 	<c:set var="x" value="10" scope="request"/>

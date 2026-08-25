@@ -10,7 +10,6 @@
 	<b>first.jsp</b>
 	<%
 		float bAmount = 300.0f +(3000.0f*0.03f);
-	
 	%>
 	<jsp:forward page="second.jsp">
 	<jsp:param value="JSP" name="bookName"/>

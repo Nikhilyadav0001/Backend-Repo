@@ -19,18 +19,21 @@
 					<input type ='text' name='name'/>
 				</td>
 			</tr>
+			
 			<tr>
 				<th>AGE</th>
 				<td>
 					<input type ='number' name='age'/>
 				</td>
 			</tr>
+			
 			<tr>
 				<th>ADDRESS</th>
 				<td>
 					<input type ='text' name='address'/>
 				</td>
 			</tr>
+			
 			<tr>
 				<th></th>
 				<td>

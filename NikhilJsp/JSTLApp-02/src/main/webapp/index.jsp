@@ -7,6 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ui page</title>
 </head>
+
+<%-- http://localhost:9999/JSTLApp-02/?name=nikhil&age=20 --%>
+
 <body>
 	<h1> Username is :: ${param.name }
 	 </h1>

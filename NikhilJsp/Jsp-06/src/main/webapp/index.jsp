@@ -17,6 +17,5 @@
 	<h1>header details is :: ${header}</h1>
 	<h1>session details is :: ${pageContext.session.id}</h1>
 	<h1>request method  is :: ${pageContext.request.method}</h1>
-	
 </body>
 </html>

@@ -17,7 +17,6 @@ public class TestApp {
 		Employee bean = context.getBean("emp",Employee.class);
 		System.out.println(bean);
 		
-		
 		//closing the container
 		((AbstractApplicationContext) context).close();
 		System.out.println("**************Closing the  contanner***********");

@@ -42,9 +42,9 @@ public class VoterVerifier {
 	//business logic method
 	public String checkVotingEligibility() {
 		if (age >= 18)
-			return "Mr/Mrs/Miss :: " + name + "u r eligible for voting , Don't wait on :: " + date;
+			return "Mr/Mrs/Miss :: " + name + " u r eligible for voting , Don't wait on :: " + date;
 		else
-			return "Mr/Mrs/Miss :: " + name + "u r not eligible for voting wait " + (18 - age)
+			return "Mr/Mrs/Miss :: " + name + " u r not eligible for voting wait " + (18 - age)
 					+ " years to cast your vote on :: " + date;
 	}
 	

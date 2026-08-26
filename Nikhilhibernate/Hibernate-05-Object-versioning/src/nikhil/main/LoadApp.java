@@ -25,7 +25,7 @@ public class LoadApp {
 			
 			if (c != null) {
 				System.out.println(c);
-				c.setCallerTune("BOLO TARA RA AR");
+				c.setCallerTune("BOLO TARA RA RA");
 				
 				//session.saveOrUpdate(c);
 				flag =true;

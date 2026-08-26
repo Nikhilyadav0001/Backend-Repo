@@ -38,7 +38,6 @@ public class PersonInfo implements Serializable{
 		System.out.println("hibernates loads .clsss file");
 	}
 	
-	
 	public Integer getId() {
 		return id;
 	}

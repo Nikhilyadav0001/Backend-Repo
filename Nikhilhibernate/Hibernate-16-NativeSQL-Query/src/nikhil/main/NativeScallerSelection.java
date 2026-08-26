@@ -10,7 +10,8 @@ import nikhil.util.HibernateUtil;
 
 public class NativeScallerSelection {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("unchecked")
+	public static void main(String[] args) {
 
         Session session = null;
 

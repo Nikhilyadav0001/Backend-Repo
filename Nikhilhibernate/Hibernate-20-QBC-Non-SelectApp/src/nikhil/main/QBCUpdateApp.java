@@ -13,6 +13,7 @@ import nikhli.util.HibernateUtil;
 
 public class QBCUpdateApp {
 	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		
 		Session session = null;

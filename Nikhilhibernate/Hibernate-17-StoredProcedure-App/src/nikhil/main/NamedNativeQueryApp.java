@@ -10,7 +10,8 @@ import nikhli.util.HibernateUtil;
 
 public class NamedNativeQueryApp {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("unchecked")
+	public static void main(String[] args) {
 
         Session session = null;
 

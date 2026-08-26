@@ -23,6 +23,7 @@ public class BankAccount implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long accNo;
@@ -44,6 +45,7 @@ public class BankAccount implements Serializable {
 	
 	@Version
 	private Integer versionCount;
+	
 	public Long getAccNo() {
 		return accNo;
 	}

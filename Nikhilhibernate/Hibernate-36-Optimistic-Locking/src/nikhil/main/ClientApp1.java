@@ -21,10 +21,10 @@ public class ClientApp1 {
 			InsurancePolicy ip = session.get(InsurancePolicy.class, 1l);
 			System.out.println(ip);
 			
-			Thread.sleep(10000);//sleep for 10 sec
+			Thread.sleep(20000);//sleep for 20 sec
 			
 			//contining the exicution
-			ip.setTenure(6);
+			ip.setTenure(10);
 			flag=true;
 
 			

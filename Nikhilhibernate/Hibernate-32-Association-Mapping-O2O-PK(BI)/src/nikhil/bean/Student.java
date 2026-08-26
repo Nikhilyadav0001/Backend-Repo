@@ -29,7 +29,7 @@ public class Student implements Serializable {
 	
 	//one-one mapping
 	@OneToOne(targetEntity = LibraryMembership.class,
-			//fetch = FetchType.EAGER, no need in one ot one becauseit will load eger 
+			//fetch = FetchType.EAGER, no need in one to one because it will load eager 
 			cascade = CascadeType.ALL)
 	@PrimaryKeyJoinColumn(name = "lid", referencedColumnName = "sno")
 	private LibraryMembership library;

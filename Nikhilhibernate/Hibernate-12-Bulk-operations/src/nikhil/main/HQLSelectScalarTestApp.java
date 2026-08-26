@@ -24,9 +24,7 @@ public class HQLSelectScalarTestApp {
 
 			session = HibernateUtil.getSession();
 			query = session.createQuery(
-					"SELECT policyId,policyName"
-					+ " FROM nikhil.bean.InsurancePolicy "
-					+ "WHERE policyId=:id");
+					"SELECT policyId,policyName FROM nikhil.bean.InsurancePolicy WHERE policyId=:id");
 
 			// set namedparameter for id
 			long id = 2L;

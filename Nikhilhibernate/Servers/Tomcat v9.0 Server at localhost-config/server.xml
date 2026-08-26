@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="MVCCRUDAPP" path="/MVCCRUDAPP" reloadable="true" source="org.eclipse.jst.jee.server:MVCCRUDAPP"/><Context docBase="MVCUsingJSP&amp;Hibernate" path="/MVCUsingJSP&amp;Hibernate" reloadable="true" source="org.eclipse.jst.jee.server:MVCUsingJSP&amp;Hibernate"/></Host>
+      <Context docBase="MVCCRUDAPP" path="/MVCCRUDAPP" reloadable="true" source="org.eclipse.jst.jee.server:MVCCRUDAPP"/><Context docBase="MVCUsingJSP&amp;Hibernate" path="/MVCUsingJSP&amp;Hibernate" reloadable="true" source="org.eclipse.jst.jee.server:MVCUsingJSP&amp;Hibernate"/><Context docBase="Hibernate-15-PaginationApp" path="/Hibernate-15-PaginationApp" reloadable="true" source="org.eclipse.jst.jee.server:Hibernate-15-PaginationApp"/></Host>
     </Engine>
   </Service>
 </Server>

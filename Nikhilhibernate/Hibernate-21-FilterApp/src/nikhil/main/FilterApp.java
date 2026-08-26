@@ -34,7 +34,6 @@ public class FilterApp {
             query.setParameter("amt", 15000f);
 
             List<BankAccount> accounts = query.getResultList();
-
             accounts.forEach(System.out::println);
 
         } catch (HibernateException e) {

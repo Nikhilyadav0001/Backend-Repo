@@ -78,6 +78,7 @@ public class PassportDaoImpl implements IPassportDao {
 				try {
 					session = HibernateUtil.getSession();
 					
+					@SuppressWarnings("unchecked")
 					Query<Person> query = session.createQuery("from Person");
 					List<Person> records = query.getResultList();
 					System.out.println();

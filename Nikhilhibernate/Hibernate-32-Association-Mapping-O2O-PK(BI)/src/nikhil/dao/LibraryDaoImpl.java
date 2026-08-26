@@ -2,7 +2,6 @@ package nikhil.dao;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -66,10 +65,10 @@ public class LibraryDaoImpl implements ILibraryDao {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void loadRecordUsingParent() {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubds
 
 				Session session = null;
 

@@ -1,4 +1,4 @@
-package nikhil.bean;
+	package nikhil.bean;
 
 import java.io.Serializable;
 import java.util.List;
@@ -42,7 +42,7 @@ public class Employee implements Serializable {
 	@ElementCollection
 	@Column(name = "names")
 	@CollectionTable(name = "PHONE_NUMBERS_SET",
-	joinColumns = @JoinColumn(referencedColumnName = "eid",name ="emp_id"))
+		joinColumns = @JoinColumn(referencedColumnName = "eid",name ="emp_id"))
 	private Set<Long> phoneNumbers;
 	
 	@ElementCollection

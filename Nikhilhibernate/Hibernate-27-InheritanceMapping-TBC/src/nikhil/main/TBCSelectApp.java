@@ -37,6 +37,7 @@ public class TBCSelectApp {
 
 			System.in.read();
 			//always update to string with respest to amount of parent class otherwise it will not print it
+			
 			// selecting child classes
 			Query<ChequePayment> query3 = session.createQuery("from ChequePayment");
 			List<ChequePayment> cheque = query3.getResultList();

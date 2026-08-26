@@ -13,9 +13,6 @@ import javax.persistence.NamedQuery;
 @NamedQuery(name = "GET_ALL_POLICIES" ,query = "FROM nikhil.entity.InsurancePolicy ")
 public class InsurancePolicy implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id

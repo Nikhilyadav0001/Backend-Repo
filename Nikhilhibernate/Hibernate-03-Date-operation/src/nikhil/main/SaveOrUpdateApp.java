@@ -27,7 +27,9 @@ public class SaveOrUpdateApp {
 			PersonInfo info = new PersonInfo();
 			info.setPaddr("rewari");
 			info.setPname("sachin");
+			
 			//yesr 1900+ month1-12 date 1-31 hours 0-23 minutes 0-59 
+			
 			info.setDob(LocalDateTime.of(2005, 5, 03, 17, 30));
 			info.setDoj(LocalTime.of(1, 30, 55));
 			info.setDom(LocalDate.now());

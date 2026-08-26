@@ -1,6 +1,5 @@
 package nikhil.main;
 
-import java.util.List;
 import java.util.Optional;
 
 import javax.persistence.criteria.CriteriaBuilder;

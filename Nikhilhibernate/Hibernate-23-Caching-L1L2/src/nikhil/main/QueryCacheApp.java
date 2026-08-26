@@ -22,6 +22,7 @@ public class QueryCacheApp {
 			sf = HibernateUtil.getSessionFactory();
 			List<InsurancePolicy> ls =null;
 			
+			@SuppressWarnings("unchecked")
 			Query<InsurancePolicy> qr =session.createQuery("from InsurancePolicy");
 			
 			//enable the l2 cache  and mark region as region1

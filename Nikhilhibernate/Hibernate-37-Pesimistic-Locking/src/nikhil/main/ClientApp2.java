@@ -22,6 +22,7 @@ public class ClientApp2 {
 			InsurancePolicy ip = session.get(InsurancePolicy.class, 2l,LockMode.UPGRADE_NOWAIT);
 			System.out.println(ip);
 			
+			
 			ip.setTenure(16);
 			flag=true;
 			

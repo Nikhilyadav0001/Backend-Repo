@@ -11,6 +11,7 @@ public class ProgramProjId implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	private Integer pid;
 	private Integer projId;
 	@Override

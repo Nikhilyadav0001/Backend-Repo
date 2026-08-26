@@ -4,11 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import nikhil.bean.BankAccount;
-
-
-
-
+import nikhil.bean.Project;
 
 public class HibernateUtil {
 	
@@ -19,7 +15,7 @@ public class HibernateUtil {
 		if (sessionFactory == null) {
 			sessionFactory =new Configuration()
 		 					.configure()
-		 					.addAnnotatedClass(BankAccount.class)
+		 					.addAnnotatedClass(Project.class)
 		 					.buildSessionFactory();
 		}
 	}

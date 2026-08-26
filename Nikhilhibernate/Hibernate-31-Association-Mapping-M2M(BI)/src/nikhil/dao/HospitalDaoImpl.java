@@ -45,7 +45,7 @@ public class HospitalDaoImpl implements IHospitalDao {
 			p2.setProblem("kidney");
 			
 			Patient p3 = new Patient();
-			p3.setPatName("pal");
+			p3.setPatName("nal");
 			p3.setProblem("kidney");
 			
 			//linking child to parent
@@ -85,12 +85,12 @@ public class HospitalDaoImpl implements IHospitalDao {
 	@Override
 	public void loadRecordUsingParent() {
 		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
-
+		
 				Session session = null;
 
 				try {
 					session = HibernateUtil.getSession();
+					@SuppressWarnings("unchecked")
 					Query<Doctor> query = session.createQuery("from Doctor");
 					List<Doctor> records = query.getResultList();
 					records.forEach(row->{

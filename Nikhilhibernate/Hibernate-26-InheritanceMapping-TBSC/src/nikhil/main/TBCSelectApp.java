@@ -36,7 +36,8 @@ public class TBCSelectApp {
 			card.forEach(System.out::println);
 
 			System.in.read();
-			//always override to sting include parent class amount in it
+			//always override to string include parent class amount in it
+			
 			// selecting child classes
 			Query<ChequePayment> query3 = session.createQuery("from ChequePayment");
 			List<ChequePayment> cheque = query3.getResultList();

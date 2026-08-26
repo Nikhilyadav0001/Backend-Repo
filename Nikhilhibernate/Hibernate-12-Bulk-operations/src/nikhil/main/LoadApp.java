@@ -11,6 +11,7 @@ import nikhli.util.HibernateUtil;
 
 public class LoadApp {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 
 		Session session = null;
@@ -27,6 +28,7 @@ public class LoadApp {
 			listOfRecords.forEach(policy -> System.out.println(policy));
 			
 			System.out.println();
+			
 			//retiriving using foreach and method refrence
 			listOfRecords.forEach(System.out::println);
 			

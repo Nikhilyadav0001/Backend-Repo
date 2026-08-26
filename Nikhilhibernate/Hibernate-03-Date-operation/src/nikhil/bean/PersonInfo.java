@@ -73,14 +73,11 @@ public class PersonInfo implements Serializable{
 	public void setDoj(LocalTime doj) {
 		this.doj = doj;
 	}
+	
 	@Override
 	public String toString() {
 		return "PersonInfo [id=" + id + ", pname=" + pname + ", paddr=" + paddr + ", dob=" + dob + ", dom=" + dom
 				+ ", doj=" + doj + "]";
 	}
-	
-	
-	
-	
 	
 }

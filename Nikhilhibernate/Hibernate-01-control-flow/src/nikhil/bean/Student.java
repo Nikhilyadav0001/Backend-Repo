@@ -14,6 +14,7 @@ import javax.persistence.Table;
 public class Student implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@Column(name="sid")
 	@GeneratedValue(strategy =GenerationType.AUTO)

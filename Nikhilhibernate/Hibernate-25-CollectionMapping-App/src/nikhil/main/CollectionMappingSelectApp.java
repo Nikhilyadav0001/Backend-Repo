@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import nikhil.bean.Employee;
@@ -12,6 +11,7 @@ import nikhli.util.HibernateUtil;
 
 public class CollectionMappingSelectApp {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		
 		Session session = null;

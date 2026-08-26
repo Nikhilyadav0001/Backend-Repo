@@ -4,15 +4,14 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import nikhil.bean.Address;
 import nikhil.bean.StudentInfo;
 import nikhli.util.HibernateUtil;
 
 public class ComponentMappingSelectApp {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		
 		Session session = null;

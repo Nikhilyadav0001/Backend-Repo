@@ -27,7 +27,6 @@ public class WishServlet extends HttpServlet {
 		LocalDateTime dt = LocalDateTime.now();
 		int hour = dt.getHour();
 
-			
 		pw.println("<h1><center>Today date and time is :: " + dt + "</center></h1>");
 		if (hour < 12)
 			pw.println("<h2><center>Good Morning </center></h2>");

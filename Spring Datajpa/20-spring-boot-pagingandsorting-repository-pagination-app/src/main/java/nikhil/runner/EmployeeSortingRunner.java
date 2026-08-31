@@ -21,7 +21,7 @@ public class EmployeeSortingRunner implements CommandLineRunner {
 		// pageNum = 1, pageSize = 3
 		// select * from employee limit ?,?
 		// noOfpages = totalrecords/pageSize
-		repo.findAll(PageRequest.of(2,3)).forEach(System.out::println);
+		repo.findAll(PageRequest.of(1,3)).forEach(System.out::println);
 		
 		// pageNum = 3, pageSize = 2
 		// select * from employee limit ?,?;

@@ -5,13 +5,15 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import nikhil.dao.IStudentDao;
 import nikhil.entity.Student;
 import nikhil.exception.StudentNotFoundException;
 
-//@Component
+@Component
+@Order(1)
 public class StudentRunner implements CommandLineRunner {
 
 	@Autowired

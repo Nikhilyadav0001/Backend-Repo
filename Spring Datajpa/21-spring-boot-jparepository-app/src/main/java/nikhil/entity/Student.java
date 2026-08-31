@@ -32,6 +32,7 @@ public class Student implements Serializable {
 	@Column(name = "sfee")
 	private Double stdFee;
 
+	@SuppressWarnings("deprecation")
 	@Column(name = "sdoj")
 	// @Temporal(TemporalType.DATE)//stores only date
 	// @Temporal(TemporalType.TIME)//stores only time

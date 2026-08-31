@@ -31,7 +31,7 @@ public class StudentDeleteRunner implements CommandLineRunner {
 		dao.delete(student);
 
 		dao.delete(dao
-					.findById(100)
+					.findById(9)
 						.orElseThrow(
 								()-> new StudentNotFoundException(
 				String.format("Record for %s object not avalable for the id %d", String.class.getName() ,100)

@@ -10,7 +10,7 @@ public class PersistanceConfig {
 
 	@SuppressWarnings("deprecation")
 	@Bean
-	public LobHandler lobHandler() {
+	LobHandler lobHandler() {
 		return new DefaultLobHandler();
 	}
 }

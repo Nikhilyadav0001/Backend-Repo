@@ -17,6 +17,8 @@ public class WelcomeController {
 	}
 
 	/**
+	 * http://localhost:9999/
+	 * 
 	 * 1. REQUEST TYPE :: GET/POST
 	 * 2. PATH         :: URL
 	 * 3. MODEL   	   :: Sending the data from Controller to View

@@ -23,5 +23,4 @@ public class FetchLatestDataFromProps {
 		System.out.println(output);
 	}
 
-	
 }

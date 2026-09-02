@@ -5,6 +5,7 @@ import java.net.URI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -27,8 +28,12 @@ public class CartConsumer {
 		//TAKE THE HELP OF URI AND CREATE URL
 		String url = uri + "/v1/api/cart/show";
 		
+		HttpHeaders headers = new HttpHeaders();
+	    headers.set("TOKENID", "abc123");
 	
 		RestTemplate rt = new RestTemplate();
+		
+		//use exchange for attacching the headers
 		ResponseEntity<String> responseEntity = rt.getForEntity(url, String.class);
 		
 		return responseEntity.getBody();

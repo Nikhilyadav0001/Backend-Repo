@@ -38,7 +38,7 @@ public class MyCustomExceptionHandler {
 		
 		MyErrorResponse body = new MyErrorResponse(
 				new Date().toString(), 
-				"PRODUCT NOT FOUND", 
+				"PRODUCT NOT FOUND ....", 
 				404, 
 				pnfe.getMessage());
 		

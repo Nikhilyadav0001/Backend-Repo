@@ -19,8 +19,6 @@ public class Json2Java {
     	
     	Person person = mapper.readValue(new File("src/main/resources/person.json"), Person.class);
 
-    	System.out.println(person);
-    	
+    	System.out.println(person);	
     }
-
 }

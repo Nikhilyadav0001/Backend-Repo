@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PassengerInfo {
 	private String firstName;
+	private String lastName;
 	private String from;
 	private String journeyDate;
-	private String lastName;
 	private String to;
 	private String trainNumber;
 }

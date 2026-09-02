@@ -15,8 +15,6 @@ public class CustomeDateSerializer extends JsonSerializer<Date> {
 		// logic for serializaion
 		
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
-		gen.writeString(formatter.format(date));
-		
+		gen.writeString(formatter.format(date));	
 	}
-
 }

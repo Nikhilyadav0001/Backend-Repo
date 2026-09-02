@@ -26,6 +26,8 @@ import nikhil.exception.StudentNotFoundException;
 import nikhil.model.Student;
 import nikhil.service.IStudentService;
 
+//http://localhost:9999/swagger-ui/index.html
+
 @RestController
 @RequestMapping("/v1/api/student")
 public class StudentRestController {

@@ -18,5 +18,4 @@ public class CustomeBalanceSerializer extends JsonSerializer<BigDecimal> {
 		gen.writeString(formatter.format(balance));
 		
 	}
-
 }

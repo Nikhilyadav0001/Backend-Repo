@@ -33,7 +33,7 @@ public class CurrencyConverter {
 		body.setCurrencyId(1);
 		body.setCurrencyFrom(from);
 		body.setCurrencyTo(to);
-		body.setCurrencyValue(83);
+		body.setCurrencyValue(94);
 		
 		try {
 			//Setting up a dealy of some 15 secs

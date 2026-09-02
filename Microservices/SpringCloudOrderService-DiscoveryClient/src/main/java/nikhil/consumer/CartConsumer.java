@@ -35,8 +35,8 @@ public class CartConsumer {
 		HttpHeaders headers = new HttpHeaders();
 	    headers.set("TOKENID", "abc123");
 		
-	
 		RestTemplate rt = new RestTemplate();
+		//use exchange for attaching the headers
 		ResponseEntity<String> responseEntity = rt.getForEntity(url, String.class);
 		
 		

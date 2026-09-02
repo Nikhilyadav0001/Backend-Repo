@@ -14,6 +14,8 @@ public class ProducerTest {
 	@Autowired
 	private ProducerService service;
 	
+	//  http://localhost:8161/admin
+
 	@Scheduled(cron="*/10 * * * * *")
 	public void sendMessage() {
 		service.sendData("hello:: "+new Date());

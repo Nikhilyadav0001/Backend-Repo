@@ -23,7 +23,6 @@ public class ProducerService {
 	public void sendData(String message) {
 		
 		//Message createMessage(Session session) throws JMSException
-		
 		//using lamda
 		//jmt.send(destination,session->session.createTextMessage(message));
 		

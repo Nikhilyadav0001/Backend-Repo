@@ -12,5 +12,6 @@ public class SpringAdminServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAdminServerApplication.class, args);
 	}
-
 }
+
+//http://localhost:9999

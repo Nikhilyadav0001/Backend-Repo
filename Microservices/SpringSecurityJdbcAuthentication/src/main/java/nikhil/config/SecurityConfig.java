@@ -49,9 +49,14 @@ public class SecurityConfig {
 						).authorities("ADMIN")	
 				.build();
 		
-		 JdbcUserDetailsManager userDetailsManager = new JdbcUserDetailsManager(dataSource);
-		 userDetailsManager.createUser(user1);
-		 userDetailsManager.createUser(user2);
+		JdbcUserDetailsManager userDetailsManager = new JdbcUserDetailsManager(dataSource);
+		 if (!userDetailsManager.userExists("Nikhil")) {
+		        userDetailsManager.createUser(user1);
+		    }
+
+		 if (!userDetailsManager.userExists("Sachin")) {
+		        userDetailsManager.createUser(user2);
+		    }
 		 return userDetailsManager;
 	}
 

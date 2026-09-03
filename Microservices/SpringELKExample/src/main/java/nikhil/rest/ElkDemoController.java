@@ -30,7 +30,4 @@ public class ElkDemoController {
 			return new ResponseEntity<>("Access Denied for " + name, HttpStatus.BAD_REQUEST);
 		}
 	}
-
-	
-	
 }

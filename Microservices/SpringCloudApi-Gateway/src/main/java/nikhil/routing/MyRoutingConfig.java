@@ -20,7 +20,7 @@ public class MyRoutingConfig {
 								.filters(f->f.addRequestHeader("TOKENID",UUID.randomUUID().toString())
 											 .addResponseHeader("SERVICESTATUS", "ACTIVE"))
 							.uri("lb://CART-SERVICE"))
-				.route("ORDERDETAIlS", r->r.path("/v1/api/order/**").uri("lb://ORDER-SERVICE"))
+				.route("ORDERDETAILS", r->r.path("/v1/api/order/**").uri("lb://ORDER-SERVICE"))
 				.build();
 	}
 	

@@ -8,9 +8,6 @@ import org.springframework.context.annotation.Bean;
 
 //@Configuration
 public class MyRoutingConfig {
-
-	
-	
   //Define the routing information
   @Bean
   RouteLocator configureRoutes(RouteLocatorBuilder builder) {

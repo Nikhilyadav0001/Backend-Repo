@@ -25,7 +25,6 @@ public class SecurityConfig {
 				.logout(logout->logout.permitAll()).build();
 	}
 	
-	
 	//2. Authentication
 	@SuppressWarnings("deprecation")
 	@Bean

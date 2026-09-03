@@ -20,10 +20,11 @@ public class MyRunner implements CommandLineRunner {
 		Mono<Student> result = WebClient .create(baseUrl) 
 									.post() 
 									.uri("/create")
-									.body(Mono.just(new Student("ID.2", "Kartik", 165410.0)),Student.class)
+									.body(Mono.just(new Student("ID.3", "Pankaj", 16651.0)),Student.class)
 									.retrieve() 
 									.bodyToMono(Student.class);
 		System.out.println("******create *****");
+		
 		//result.subscribe(System.out::println); subscribe return decomposible
 		result.subscribe(res -> System.out.println(res+"student created"));
 	  

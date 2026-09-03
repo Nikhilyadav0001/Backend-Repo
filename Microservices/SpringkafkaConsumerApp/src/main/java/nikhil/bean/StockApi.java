@@ -20,5 +20,4 @@ public class StockApi {
 	private Integer stkId;
 	private String stkCode;
 	private Double stkCost;
-
 }

@@ -16,7 +16,8 @@ public class OrderController {
 	@GetMapping("/order")
 	@CircuitBreaker(name = ORDER_SERVICE, fallbackMethod = "orderFallback")
 	public ResponseEntity<String> createOrder() {
-		//send the request to another MS# for execution
+		
+		//send the request to another MS# for execution MSInterComunication
 		String response = new RestTemplate().getForObject("http://localhost:8090/item", String.class);
 		return new ResponseEntity<String>(response, HttpStatus.OK);
 	}

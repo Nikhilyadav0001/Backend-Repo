@@ -38,7 +38,6 @@ public class UserController {
 	 */
 	@PostMapping("/save")
 	public String saveUser(
-			
 		@ModelAttribute	User user,
 			Model model
 			) {

@@ -25,6 +25,6 @@ public class OrderController {
 	public ResponseEntity<String> orderFallback(Exception e) {
 		//Execute the response if the exception occurs
 		return new ResponseEntity<String>("SERVICE IS DOWN!! TRY AFTER SOME TIME", HttpStatus.OK);
-	
+	//localhost:8888/actuator/health for circuit details
 	}
 }
